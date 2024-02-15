@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".splide", {
     type: "loop",
-    height: "autoWidth",
     gap: "20px",
     perPage: 3,
     focus: 0,
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   var splide2 = new Splide("#splide2", {
     type: "loop",
-    height: "autoWidth",
     gap: "20px",
     perPage: 3,
     focus: 0,
