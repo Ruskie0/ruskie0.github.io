@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <script src="js/autotyping.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <div class="topsocials">
       <ul>
+        <li id="englishLang">
+          <a href="#" onclick="i18next.changeLanguage('en')"
+            ><img
+              src="assets/images/emojione-v1--flag-for-united-kingdom.svg"
+              alt="United Kingdoms Flag"
+              srcset=""
+          /></a>
+        </li>
+        <li id="danishLang">
+          <a href="#" onclick="i18next.changeLanguage('da')"
+            ><img
+              src="assets/images/twemoji--flag-denmark.svg"
+              alt="Danish Flag"
+              srcset=""
+          /></a>
+        </li>
         <li>
           <a href="#"
             ><img
@@ -22,17 +44,29 @@
             ><img src="assets/images/mdi--linkedin.svg" alt="LinkedIn Logo"
           /></a>
         </li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li>
+          <a href="https://steamcommunity.com/id/Askie10101/">
+            <img src="assets/images/mdi--steam.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:askie.dev@gmail.com"
+            ><img src="assets/images/material-symbols--mail.svg" alt=""
+          /></a>
+        </li>
         <li><a href="#"></a></li>
       </ul>
     </div>
     <div class="context">
-      <h1>Hey, i'm Sebastian</h1>
-      <h1>And i'm a <span class="autoText"></span></h1>
-      <p><a href="#">Wanna check out my work?</a></p>
-      <p>Or</p>
-      <p><a href="#">Work with me?</a></p>
+      <h1 id="trans1">Hey, I'm Sebastian</h1>
+      <h1><span id="trans2"></span><span class="autoText"></span></h1>
+      <p id="gsapWorkCheck ">
+        <a href="#proWork" id="trans3">Wanna check out my work?</a>
+      </p>
+      <p class="gsapWorkWith" id="trans4">Or</p>
+      <p class="gsapWorkWithA">
+        <a href="#footer" id="trans5">Work with me?</a>
+      </p>
     </div>
 
     <div class="area">
@@ -58,13 +92,379 @@
     <div class="divider">
       <img src="/assets/images/layered-waves-haikeitest.png" alt="" />
     </div>
-    <div class="container about">
-      <div class="columnSplit"></div>
-      <div class="columnSplit"></div>
+    <div class="aboutHeader">
+      <h1 id="trans6">Who am I, anyway?</h1>
+      <img src="assets/images/logo.png" alt="" />
     </div>
+    <div class="container about">
+      <div class="columnSplit">
+        <div id="aboutMeSectionL" class="aboutMeSection">
+          <h2 id="trans7">The boring (but pretty important) stuff!</h2>
+          <div id="aboutMeTextL" class="aboutMeText">
+            <span id="trans8">
+              First and foremost, I'm a nerd, a nerd that happens to specialise
+              in Front-End Web Development, working with Javascript, HTML, CSS,
+              SCSS and various frameworks, but also has experience with
+              Back-End, including server side PHP programming, and working with
+              SQL databases. I have also worked with WordPress and various page
+              builders.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="columnSplit">
+        <div id="aboutMeSectionR" class="aboutMeSection">
+          <h2 id="trans9">The (Slightly) more interesting stuff!!</h2>
+          <div id="aboutMeTextR" class="aboutMeText">
+            <span id="trans10">
+              I love playing games, anything from shooters to grand strategy, to
+              flight simulators, I've been into tech since... Well, since
+              forever. I've been on the computer since about 8, and have only
+              been growing more proficient at using them. Outside of that, I do
+              drawing (though I do that on computer aswell sometimes) and I like
+              reading aswell.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutMeExtra">
+      <div class="aboutMeExtraDiv">
+        <h2 id="trans11">Technologies used primarily for Front-End</h2>
+        <section id="splide" class="splide" aria-label="">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="assets/images/skill-icons--html.svg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="assets/images/skill-icons--css.svg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img
+                    src="assets/images/vscode-icons--file-type-js-official.svg"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img
+                    src="assets/images/vscode-icons--file-type-scss2.svg"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="assets/images/devicon--photoshop.svg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="assets/images/devicon--vuejs-wordmark.svg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="assets/images/simple-icons--oxygen.svg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img
+                    src="assets/images/devicon-plain--wordpress-wordmark.svg"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="splide__arrows"></div>
+        </section>
+      </div>
+      <div class="aboutMeExtraDiv">
+        <h2 id="trans12">Technologies used primarily for Back-End</h2>
+        <section id="splide2" class="splide" aria-label="">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="splide__slide__container"></div>
+                <img
+                  src="assets/images/vscode-icons--file-type-node.svg"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="assets/images/skill-icons--git.svg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="assets/images/skill-icons--php-dark.svg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="assets/images/devicon--csharp.svg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="assets/images/cib--mysql.svg" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="splide__arrows"></div>
+        </section>
+      </div>
+    </div>
+    <div class="dividerTwo">
+      <img src="assets/images/layered-waves-haikei (7).png" alt="" />
+    </div>
+    <div id="proWork" class="proWork">
+      <h2 id="trans13">Prior work</h2>
+      <p id="trans14">
+        Previous work, working either solo or with 1-2 people additionally
+      </p>
+      <div class="container80">
+        <div class="columnsStart">
+          <div id="gsapWork1" class="workItem">
+            <div class="leftImg">
+              <a href="https://kok-amok.dk/"
+                ><img src="assets/images/KokAmok.jpg" alt=""
+              /></a>
+            </div>
+            <div class="leftImgContent">
+              <h3><a href="https://kok-amok.dk/">Kok Amok</a></h3>
+              <p id="trans15">
+                Kok Amok is a catering service centered around affordable, easy
+                and pain free catering for gatherings, or just a big night in.
+                <br />
+                <br />
+                Developed in WordPress
+              </p>
+            </div>
+          </div>
+          <div id="gsapWork2" class="workItem">
+            <div class="rightImgContent">
+              <h3><a href="https://kineticbiofuel.com/">Kinetic Biofuel</a></h3>
+              <p id="trans16">
+                Kinetic Biofuel offers a 2nd Generation Technology using straw
+                as raw material enabling biogas producers to more than doubling
+                the biogas production in existing and new biogas plants.
+              </p>
+            </div>
+            <div class="rightImg">
+              <a href="https://kineticbiofuel.com/"
+                ><img src="assets/images/Screenshot_1.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div id="gsapWork3" class="workItem">
+            <div class="leftImg">
+              <a href="https://aalborgcity.dk/"
+                ><img src="assets/images/Screenshot_2.jpg" alt=""
+              /></a>
+            </div>
+            <div class="leftImgContent">
+              <h3><a href="https://aalborgcity.dk/">Aalborg City</a></h3>
+              <p id="trans17">
+                Aalborg City is a lively commercial city in the heart of North
+                Jutland, where there is always something going on! Shops, cafes
+                and restaurants lie side by side in the charming streets, and
+                here you can find everything your heart desires. The city has a
+                long history as a trading town, and it is still today an
+                important destination for shopping enthusiasts.
+              </p>
+            </div>
+          </div>
+          <div id="gsapWork4" class="workItem">
+            <div class="rightImgContent">
+              <h3><a href="https://hotelsktannae.dk/">Hotel Sankt Annæ</a></h3>
+              <p id="trans18">
+                Hotel Sankt Annæ is a prestigious 4 star hotel in the heart of
+                Copenhagen, with a rich history and relaxing atmosphere, with
+                welcoming staff to accompany.
+              </p>
+            </div>
+            <div class="rightImg">
+              <a href="https://hotelsktannae.dk/"
+                ><img src="assets/images/Screenshot_3.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dividerThree">
+      <img src="assets/images/layered-waves-haikei (9).PNG" alt="" />
+    </div>
+    <footer id="footer">
+      <div class="footerDiv">
+        <h2 id="trans19">Got any questions? Or looking to work together?</h2>
+        <p trans20>
+          Feel free to shoot me a message and i'll get back to you as soon as
+          possible.
+        </p>
+        <div class="footerSocials">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="assets/images/ic--outline-discord.svg"
+                  alt="Discord Logo"
+                  srcset=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/sebastian-jensen-b4931a241/"
+                ><img src="assets/images/mdi--linkedin.svg" alt="LinkedIn Logo"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:askie.dev@gmail.com"
+                ><img src="assets/images/material-symbols--mail.svg" alt=""
+              /></a>
+            </li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/i18next@23.8.2/dist/umd/i18next.js"></script>
+    <script>
+      var lang = 0;
+      let english = document.getElementById("englishLang");
+      let danish = document.getElementById("danishLang");
 
-    <div class="extra">dwkjlada</div>
+      i18next.init(
+        {
+          lng: "en",
+          debug: true,
+          resources: {
+            en: {
+              translation: {
+                trans1: "Hey, I'm Sebastian",
+                trans2: "And I'm a Web Developer ",
+                trans3: "Wanna check out my work?",
+                trans4: "Or",
+                trans5: "Work with me?",
+                trans6: "Who am i, anyway?",
+                trans7: "The boring (but pretty important) stuff!",
+                trans8:
+                  "First and foremost, I'm a nerd, a nerd that happens to specialise in Front-End Web Development, working with Javascript, HTML, CSS, SCSS and various frameworks, but also has experience with Back-End, including server-side PHP programming, and working with SQL databases. I have also worked with Wordpress and various page-builders.",
+                trans9: "The (Slightly) more interesting stuff!!",
+                trans10:
+                  "I love playing games, anything from shooters to grand strategy, to flight simulators, I've been into tech since... Well, since forever. I've been on the computer since about 8, and have only been growing more proficient at using them. Outside of that, I do drawing (though I do that on computer aswell sometimes) and I like reading aswell.",
+                trans11: "Technologies I've used primarily for Front-End",
+                trans12: "Technologies I've used primarily for Back-End",
+                trans13: "Prior work",
+                trans14:
+                  "Previous work, working either solo or with 1-2 people additionally",
+                trans15:
+                  "Kok Amok is a catering service centered around affordable, easy and pain free catering for gatherings <br> <br> Developed in WordPress",
+                trans16:
+                  "Kinetic Biofuel is a company that offers 2nd Generation Technology using straw as raw material enabling biogas producers to more than doubling the biogas production in existing and new biogas plants. <br> <br> Developed in WordPress",
+                trans17:
+                  "Website developed for Aalborg City, features events, user login, ecommerce shop, bilingual site and more <br> <br> Developed in WordPress",
+                trans18:
+                  "Hotel Saint Annæ is a prestigious 4 star hotel in the heart of copenhagen, focused on a minimalistic, modern and luxurious website <br> <br> Developed in WordPress",
+                trans19: "Got any questions? Or looking to work together?",
+                trans20:
+                  "Feel free to shoot me a message, and i'll get back to you as soon as possible.",
+              },
+            },
+            da: {
+              translation: {
+                trans1: "Hej, Mit navn er Sebastian",
+                trans2: "Og jeg er en Web Udvikler",
+                trans3: "Vil du tjekke ud mit arbejde?",
+                trans4: "Eller",
+                trans5: "Vil du samarbejde?",
+                trans6: "Hvem er jeg, overhovedet?",
+                trans7: "Den kedelige (men ret vigtige) del!",
+                trans8:
+                  "Først og fremmest er jeg en nørd, en nørd, der tilfældigvis har specialiseret sig i Front-End Webudvikling, arbejder med Javascript, HTML, CSS, SCSS og diverse frameworks, men som også har erfaring med Back-End, herunder server-side PHP programmering og arbejde med SQL-databaser. Jeg har også arbejdet med Wordpress og diverse sidebyggere.",
+                trans9: "De (lidt) mere interessante ting!!",
+                trans10:
+                  "Jeg elsker at spille spil, alt fra skydespil, til grand strategy, til flysimulatorer, jeg har haft en interesse i tech siden... Tja, siden forevigt. Jeg har været på computeren siden cirka 8, og jeg har kun groet dygtigere til at bruge dem. Udenfor computer, tegner jeg (nogle gange gør jeg dog også det på computer...) og jeg kan også lide at læse.",
+                trans11: "Teknologier jeg har brugt primært indenfor Front-End",
+                trans12: "Teknologier jeg har brugt primært indenfor Back-End",
+                trans13: "Tidligere arbejde",
+                trans14:
+                  "Tidligere arbejde, hvor jeg enten arbejdede alene, eller med 1-2 folk ekstra.",
+                trans15:
+                  "Kok Amok er en catering service, som skulle have lavet en hjemmeside, med bestilling, kontoer, checkout, menuer og mere <br> <br> Udviklet i WordPress",
+                trans16:
+                  "Kinetic Biofuel er et firma som laver 2nd Generation Teknologi som bruger halm som råmateriale, som har mere end en fordoblet biogasproduktionen i eksisterende og nye biogasanlæg <br> <br> Udviklet i WordPress",
+                trans17:
+                  "Hjemmeside udviklet for Aalborg City, den indeholder events, bruger login, ecommerce butik, tosproget hjemmeside og mere <br> <br> Udviklet i WordPress",
+                trans18:
+                  "Hotel Sankt Annæ er et firestjernet hotel i hjertet af København, med meget historie bag dem, deres hjemmeside er fokuseret på at være moderne, og premium <br> <br> Udviklet i WordPress",
+                trans19:
+                  "Har du nogle spørgsmål? Eller vil du kontake om arbejde?",
+                trans20:
+                  "Så føl dig fri til at sende mig en besked, jeg vil skrive tilbage så hurtigt som mulig.",
+              },
+            },
+          },
+        },
+        function (err, t) {
+          // init set content
+          updateContent();
+        }
+      );
+
+      function updateContent() {
+        document.getElementById("trans1").innerHTML = i18next.t("trans1");
+        document.getElementById("trans2").innerHTML = i18next.t("trans2");
+        document.getElementById("trans3").innerHTML = i18next.t("trans3");
+        document.getElementById("trans4").innerHTML = i18next.t("trans4");
+        document.getElementById("trans5").innerHTML = i18next.t("trans5");
+        document.getElementById("trans6").innerHTML = i18next.t("trans6");
+        document.getElementById("trans7").innerHTML = i18next.t("trans7");
+        document.getElementById("trans8").innerHTML = i18next.t("trans8");
+        document.getElementById("trans9").innerHTML = i18next.t("trans9");
+        document.getElementById("trans10").innerHTML = i18next.t("trans10");
+        document.getElementById("trans11").innerHTML = i18next.t("trans11");
+        document.getElementById("trans12").innerHTML = i18next.t("trans12");
+        document.getElementById("trans13").innerHTML = i18next.t("trans13");
+        document.getElementById("trans14").innerHTML = i18next.t("trans14");
+        document.getElementById("trans15").innerHTML = i18next.t("trans15");
+        document.getElementById("trans16").innerHTML = i18next.t("trans16");
+        document.getElementById("trans17").innerHTML = i18next.t("trans17");
+        document.getElementById("trans18").innerHTML = i18next.t("trans18");
+      }
+
+      function changeLng(lng) {
+        i18next.changeLanguage(lng);
+      }
+
+      function isEven(n) {
+        return n % 2 == 0;
+      }
+
+      i18next.on("languageChanged", () => {
+        updateContent();
+
+        lang++;
+        if (isEven(lang)) {
+          english.style.display = "none";
+          danish.style.display = "block";
+        } else {
+          english.style.display = "block";
+          danish.style.display = "none";
+        }
+        console.log(lang);
+      });
+    </script>
   </body>
-  <script src="js/autotyping.min.js"></script>
-  <script src="js/script.js"></script>
 </html>
