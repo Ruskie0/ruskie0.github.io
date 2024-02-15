@@ -410,12 +410,12 @@ a {
 
 .splide__arrow--prev {
   position: absolute !important;
-  left: -4em !important;
+  left: -3em !important;
 }
 
 .splide__arrow--next {
   position: absolute !important;
-  right: -4em !important;
+  right: -3em !important;
 }
 
 .proWork {
@@ -627,7 +627,7 @@ footer {
     animation-duration: 11s;
   }
   .aboutMeExtra h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 @media (max-width: 1000px) {
