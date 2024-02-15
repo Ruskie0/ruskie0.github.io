@@ -109,8 +109,11 @@ document.addEventListener("DOMContentLoaded", function () {
     focus: 0,
     omitEnd: 1,
     breakpoints: {
-      640: {
+      1320: {
         perPage: 2,
+      },
+      800: {
+        perPage: 1,
       },
     },
   });
@@ -122,8 +125,11 @@ document.addEventListener("DOMContentLoaded", function () {
     focus: 0,
     omitEnd: 1,
     breakpoints: {
-      640: {
+      1320: {
         perPage: 2,
+      },
+      800: {
+        perPage: 1,
       },
     },
   });

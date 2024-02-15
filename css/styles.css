@@ -327,6 +327,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 .aboutMeSection h2 {
   font-size: 40px;
@@ -344,7 +345,7 @@ a {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .aboutMeExtra h2 {
   margin-bottom: 20px;
@@ -417,6 +418,10 @@ a {
   font-size: 40px;
   color: #e0e0e0;
   width: 100%;
+  text-align: center;
+}
+.proWork p {
+  width: 80%;
 }
 
 .container80 {
@@ -565,5 +570,65 @@ footer {
   }
   50% {
     color: rgb(245, 245, 245);
+  }
+}
+@media (max-width: 1320px) {
+  .container {
+    flex-direction: column;
+  }
+  .columnSplit {
+    width: 100%;
+    padding-top: 2.5%;
+  }
+  .aboutHeader img {
+    width: 50%;
+  }
+  .workItem {
+    flex-direction: column;
+  }
+  .workItem .leftImg {
+    width: 100%;
+    padding-left: 5%;
+  }
+  .workItem .leftImgContent {
+    width: 80%;
+  }
+  .workItem .rightImg {
+    width: 100%;
+    padding-right: 5%;
+  }
+  .workItem .rightImgContent {
+    width: 80%;
+  }
+  .workItem.rightWorkItem {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 800px) {
+  .aboutHeader img {
+    width: 80%;
+  }
+  .container80 {
+    width: 100%;
+  }
+  .workItem {
+    flex-direction: column;
+  }
+  .workItem .leftImg {
+    width: 100%;
+    padding: 0%;
+  }
+  .workItem .leftImg a {
+    padding: 0%;
+  }
+  .workItem .leftImgContent {
+    width: 100%;
+  }
+  .workItem .rightImg {
+    width: 100%;
+    padding: 0%;
+  }
+  .workItem .rightImgContent {
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
