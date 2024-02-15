@@ -603,6 +603,16 @@ footer {
   }
 }
 
+@media (max-width: 1000px) {
+  .footerDiv {
+    .footerSocials {
+      ul {
+        height: 100%;
+      }
+    }
+  }
+}
+
 @media (max-width: 800px) {
   .aboutHeader {
     img {
@@ -617,7 +627,7 @@ footer {
     .leftImg {
       width: 100%;
       padding: 0%;
-      a {
+      margin a {
         padding: 0%;
       }
     }
@@ -630,6 +640,14 @@ footer {
     }
     .rightImgContent {
       width: 100%;
+    }
+  }
+  .context {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 30px;
     }
   }
 }

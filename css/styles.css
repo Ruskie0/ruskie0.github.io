@@ -604,6 +604,11 @@ footer {
     flex-direction: column-reverse;
   }
 }
+@media (max-width: 1000px) {
+  .footerDiv .footerSocials ul {
+    height: 100%;
+  }
+}
 @media (max-width: 800px) {
   .aboutHeader img {
     width: 80%;
@@ -618,7 +623,7 @@ footer {
     width: 100%;
     padding: 0%;
   }
-  .workItem .leftImg a {
+  .workItem .leftImg margin a {
     padding: 0%;
   }
   .workItem .leftImgContent {
@@ -630,5 +635,11 @@ footer {
   }
   .workItem .rightImgContent {
     width: 100%;
+  }
+  .context h1 {
+    font-size: 40px;
+  }
+  .context p {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=styles.css.map */
