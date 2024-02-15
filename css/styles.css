@@ -603,10 +603,38 @@ footer {
   .workItem.rightWorkItem {
     flex-direction: column-reverse;
   }
+  .circles li:nth-child(10) {
+    left: 55%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 6s;
+    animation-duration: 11s;
+  }
+  .circles li:nth-child(13) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 6s;
+    animation-duration: 11s;
+  }
 }
 @media (max-width: 1000px) {
   .footerDiv .footerSocials ul {
     height: 100%;
+  }
+  .circles li:nth-child(10) {
+    left: 85%;
+    width: 0;
+    height: 0;
+    animation-delay: 6s;
+    animation-duration: 11s;
+  }
+  .circles li:nth-child(13) {
+    left: 85%;
+    width: 0;
+    height: 0;
+    animation-delay: 6s;
+    animation-duration: 11s;
   }
 }
 @media (max-width: 800px) {
@@ -641,5 +669,15 @@ footer {
   }
   .context p {
     font-size: 30px;
+  }
+  .topsocials {
+    right: 25%;
+  }
+  .aboutMeExtra {
+    flex-direction: column;
+  }
+  .aboutMeExtra .aboutMeExtraDiv {
+    margin: auto;
+    width: 80%;
   }
 }/*# sourceMappingURL=styles.css.map */
