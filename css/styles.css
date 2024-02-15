@@ -354,6 +354,9 @@ a {
 }
 .aboutMeExtra .aboutMeExtraDiv {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
   width: 33%;
   text-align: center;
   padding: 2.5%;
@@ -405,8 +408,14 @@ a {
   bottom: -25px !important;
 }
 
-.splide__arrows {
-  display: none;
+.splide__arrow--prev {
+  position: absolute !important;
+  left: -4em !important;
+}
+
+.splide__arrow--next {
+  position: absolute !important;
+  right: -4em !important;
 }
 
 .proWork {
@@ -616,6 +625,9 @@ footer {
     height: 150px;
     animation-delay: 6s;
     animation-duration: 11s;
+  }
+  .aboutMeExtra h2 {
+    font-size: 35px;
   }
 }
 @media (max-width: 1000px) {
