@@ -683,7 +683,7 @@ footer {
     font-size: 30px;
   }
   .topsocials {
-    right: 25%;
+    right: 35%;
   }
   .aboutMeExtra {
     flex-direction: column;
@@ -691,5 +691,10 @@ footer {
   .aboutMeExtra .aboutMeExtraDiv {
     margin: auto;
     width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .footerSocials {
+    min-height: 70px;
   }
 }/*# sourceMappingURL=styles.css.map */
