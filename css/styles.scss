@@ -270,19 +270,40 @@ a {
 }
 
 .divider {
-  position: relative;
-  opacity: 100%;
-  width: 100%;
-  height: 200px;
   background-repeat: no-repeat;
   background-color: $DarkBlue;
   background-blend-mode: normal;
-  img {
-    position: relative;
-    z-index: 100;
-    height: 100%;
-    width: 100%;
-  }
+  display: flex;
+}
+.divider img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+}
+.dividerTwo {
+  position: relative;
+  background-repeat: no-repeat;
+  background-color: $DarkerGreen;
+  background-blend-mode: normal;
+}
+.dividerTwo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 100;
+}
+.dividerThree {
+  position: relative;
+  background-repeat: no-repeat;
+  background-color: $MediumBrown;
+  background-blend-mode: normal;
+}
+.dividerThree img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 100;
 }
 
 .columnSplit {
@@ -300,6 +321,7 @@ a {
   text-align: center;
   color: #c7cfbc;
   font-size: 30px;
+  padding-top: 25px;
   img {
     width: 25%;
     z-index: 10;
@@ -371,32 +393,6 @@ a {
   }
 }
 
-.dividerTwo {
-  position: relative;
-  opacity: 100%;
-  width: 100%;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-color: $MediumBrown;
-  background-blend-mode: normal;
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
-.dividerThree {
-  position: relative;
-  opacity: 100%;
-  width: 100%;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-color: $purplish;
-  background-blend-mode: normal;
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
 .skillSet {
   height: 100%;
   width: 100%;
@@ -408,7 +404,9 @@ a {
 .splide__pagination {
   bottom: -25px !important;
 }
-.splide__arrows {
+.splide__slide p {
+  color: #c7cfbc;
+  padding: 2%;
 }
 
 .splide__arrow--prev {

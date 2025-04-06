@@ -267,19 +267,45 @@ a {
 }
 
 .divider {
-  position: relative;
-  opacity: 100%;
-  width: 100%;
-  height: 200px;
   background-repeat: no-repeat;
   background-color: #3f495c;
   background-blend-mode: normal;
+  display: flex;
 }
+
 .divider img {
+  width: 100%;
+  height: 100%;
   position: relative;
   z-index: 100;
-  height: 100%;
+}
+
+.dividerTwo {
+  position: relative;
+  background-repeat: no-repeat;
+  background-color: #3e4435;
+  background-blend-mode: normal;
+}
+
+.dividerTwo img {
   width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 100;
+}
+
+.dividerThree {
+  position: relative;
+  background-repeat: no-repeat;
+  background-color: #888277;
+  background-blend-mode: normal;
+}
+
+.dividerThree img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 100;
 }
 
 .columnSplit {
@@ -297,6 +323,7 @@ a {
   text-align: center;
   color: #c7cfbc;
   font-size: 30px;
+  padding-top: 25px;
 }
 .aboutHeader img {
   width: 25%;
@@ -368,34 +395,6 @@ a {
   color: #c7cfbc;
 }
 
-.dividerTwo {
-  position: relative;
-  opacity: 100%;
-  width: 100%;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-color: #888277;
-  background-blend-mode: normal;
-}
-.dividerTwo img {
-  height: 100%;
-  width: 100%;
-}
-
-.dividerThree {
-  position: relative;
-  opacity: 100%;
-  width: 100%;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-color: #252047;
-  background-blend-mode: normal;
-}
-.dividerThree img {
-  height: 100%;
-  width: 100%;
-}
-
 .skillSet {
   height: 100%;
   width: 100%;
@@ -407,6 +406,11 @@ a {
 
 .splide__pagination {
   bottom: -25px !important;
+}
+
+.splide__slide p {
+  color: #c7cfbc;
+  padding: 2%;
 }
 
 .splide__arrow--prev {
