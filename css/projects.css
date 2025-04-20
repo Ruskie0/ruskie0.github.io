@@ -1,0 +1,117 @@
+.project-hero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  z-index: 5;
+}
+
+.project-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.project-hero-overlay {
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  background-color: rgba(63, 73, 92, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  opacity: 0;
+  transform: translateX(-50px);
+  margin-left: 75px;
+  margin-bottom: 50px;
+}
+.project-hero-overlay h1 {
+  display: inline-block;
+  transition: 0.3s all;
+  font-size: 50px;
+}
+.project-hero-overlay p {
+  font-size: 25px;
+}
+.project-hero-overlay a:hover {
+  transition: 0.3s all;
+  color: #c36060;
+}
+
+.project-page {
+  background-color: white;
+}
+
+.project-description {
+  padding: 2rem;
+  color: black;
+}
+.project-description .button {
+  width: 100px;
+  text-align: center;
+}
+.project-description h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.project-description img {
+  width: 100%;
+}
+
+.project-div {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.project-readmore {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.project-text h2 {
+  font-size: 35px;
+}
+.project-text p {
+  font-size: 20px;
+}
+
+.project-tools {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.project-tools li {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=projects.css.map */

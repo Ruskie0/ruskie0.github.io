@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lampefeber - Project</title>
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/splide.min.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+  </head>
+  <body>
+    <!-- Includes -->
+    <div data-include="/includes/header.html"></div>
+
+    <div class="project-page">
+      <div
+        id="projectHero"
+        class="project-hero"
+        style="background-image: url('/assets/images/lampefeber-1.jpg')"
+      >
+        <div class="project-hero-overlay">
+          <a href="https://da.lampefeber.com/">
+            <h1 data-i18n="lampefeber.title">Lampefeber</h1>
+          </a>
+          <p data-i18n="lampefeber.summary">
+            A sophisticated eCommerce site selling modern designer lighting for
+            homes and businesses.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-description">
+        <div class="container80 display-flex margin-auto">
+          <div class="project-div">
+            <h3 data-i18n="lampefeber.toolsTitle">Tools Used:</h3>
+            <ul class="project-tools">
+              <li>Shopify</li>
+              <li>Custom Theme Styling</li>
+              <li>Multilingual Setup</li>
+              <li>UX/UI Optimization</li>
+            </ul>
+          </div>
+          <div class="project-div">
+            <div class="project-text">
+              <h2 data-i18n="lampefeber.title">Lampefeber</h2>
+              <p data-i18n="lampefeber.description">
+                Lampefeber’s webshop is built to provide an elegant and seamless
+                shopping experience for high-end lighting fixtures. The site is
+                multilingual, optimized for performance, and showcases products
+                beautifully.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-image">
+          <img
+            src="/assets/images/lampefeber-2.jpg"
+            alt="Screenshot of Lampefeber website"
+          />
+          <p class="project-readmore" data-i18n="lampefeber.readmore">
+            Read more about Lampefeber
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Include -->
+    <div data-include="/includes/footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/projects.js"></script>
+    <script src="https://unpkg.com/i18next@22.4.9/i18next.min.js"></script>
+  </body>
+</html>

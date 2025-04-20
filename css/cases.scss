@@ -1,0 +1,98 @@
+$DarkBlue: #3f495c;
+$LightBlue: #b0bbd1;
+$DarkBrown: #8a7c79;
+$MediumBrown: #888277;
+$LightBrown: #d9cdcb;
+$DarkGreen: #555c47;
+$DarkerGreen: #3e4435;
+$whiteIsh: #d5d9cc;
+$WeirdGreen: #87afa3;
+$LightRed: #c36060;
+$purplish: #252047;
+
+.case-gallery {
+  background-color: $DarkBlue;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 80vh;
+
+  h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .case-card {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: auto;
+      height: 150px;
+      object-fit: contain;
+
+      @media (max-width: 500px) {
+        height: 160px;
+      }
+    }
+
+    .case-content {
+      padding: 1.5rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #ccc;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+      }
+
+      .button {
+        align-self: flex-start;
+        padding: 0.6rem 1.2rem;
+        background-color: $LightRed;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background-color: darken($LightRed, 10%);
+        }
+      }
+    }
+  }
+}

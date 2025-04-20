@@ -1,0 +1,62 @@
+<header class="headerContainer" id="headerContainer">
+  <!-- Hamburger toggle (inside topsocials on mobile) -->
+  <a class="socialLogoLink" href="/portfolio/index.html">
+    <div
+      class="socialLogo"
+      style="--icon-url: url('/portfolio/assets/images/Logo-clear.png')"
+      aria-label="Logo"
+    ></div>
+  </a>
+  <div class="topsocials" id="topSocials">
+    <ul>
+      <li id="englishLang">
+        <a href="#" onclick="i18next.changeLanguage('en')">
+          <img
+            src="/portfolio/assets/images/emojione-v1--flag-for-united-kingdom.svg"
+            alt="UK Flag"
+          />
+        </a>
+      </li>
+      <li id="danishLang">
+        <a href="#" onclick="i18next.changeLanguage('da')">
+          <img
+            src="/portfolio/assets/images/twemoji--flag-denmark.svg"
+            alt="Danish Flag"
+          />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/sebastian-jensen-b4931a241/">
+          <img
+            src="/portfolio/assets/images/mdi--linkedin.svg"
+            alt="LinkedIn"
+          />
+        </a>
+      </li>
+      <li>
+        <a href="mailto:askie.dev@gmail.com">
+          <img
+            src="/portfolio/assets/images/material-symbols--mail.svg"
+            alt="Email"
+          />
+        </a>
+      </li>
+    </ul>
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+
+  <!-- Main nav (always rendered, hidden on mobile until toggled) -->
+</header>
+<nav class="dropdown" id="dropDown">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="Work.html">Work</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+</nav>

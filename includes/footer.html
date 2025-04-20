@@ -1,0 +1,129 @@
+<footer class="site-footer">
+  <div class="footerDiv">
+    <div>
+      <h2 data-i18n="trans19"></h2>
+      <p data-i18n="trans21" style="margin: 0 auto 2rem; color: white"></p>
+      <div class="footerSocials">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/sebastian-jensen-b4931a241/"
+              ><img src="assets/images/mdi--linkedin.svg" alt="LinkedIn Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="mailto:askie.dev@gmail.com"
+              ><img src="assets/images/material-symbols--mail.svg" alt=""
+            /></a>
+          </li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footerForm">
+      <form
+        action="contact.php"
+        method="POST"
+        class="contact-form"
+        id="contactForm"
+      >
+        <!-- Optional: Formsubmit settings -->
+        <input
+          type="hidden"
+          name="_subject"
+          value="New message from your portfolio!"
+        />
+        <label for="name" data-i18n="form.nameLabel">Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email" data-i18n="form.emailLabel">Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="message" data-i18n="form.messageLabel">Message</label>
+        <textarea name="message" id="message" rows="6" required></textarea>
+
+        <button type="submit" class="button" data-i18n="form.submitButton">
+          Send
+        </button>
+      </form>
+      <p
+        id="formSuccess"
+        style="
+          display: none;
+          text-align: center;
+          margin-top: 1rem;
+          color: lightgreen;
+        "
+      >
+        Thank you for your message! I’ll get back to you as soon as possible.
+      </p>
+    </div>
+  </div>
+  <div class="footer-content">
+    <a class="socialLogoLink" href="/portfolio/index.html">
+      <div
+        class="footer-logo"
+        style="--icon-url: url('/portfolio/assets/images/Logo-clear.png')"
+        aria-label="Logo"
+      ></div>
+    </a>
+
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Work.html">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <ul class="footer-socials">
+      <li>
+        <a
+          href="https://www.linkedin.com/in/sebastian-jensen-b4931a241/"
+          target="_blank"
+        >
+          <img
+            src="/portfolio/assets/images/mdi--linkedin.svg"
+            alt="LinkedIn"
+          />
+        </a>
+      </li>
+      <li>
+        <a href="mailto:askie.dev@gmail.com">
+          <img
+            src="/portfolio/assets/images/material-symbols--mail.svg"
+            alt="Email"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Sebastian Jensen. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.text())
+        .then((data) => {
+          if (data.includes("success")) {
+            document.getElementById("formSuccess").style.display = "block";
+            form.reset();
+          } else {
+            alert("Something went wrong. Please try again.");
+          }
+        })
+        .catch(() => alert("Error sending message."));
+    });
+</script>

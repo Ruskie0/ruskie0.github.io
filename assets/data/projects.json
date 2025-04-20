@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "kok-amok",
+    "name": "Kok Amok",
+    "url": "https://kok-amok.dk/",
+    "image": "assets/images/Kok-Amok-Picture1.png",
+    "summary": {
+      "en": "Kok Amok is a catering service focused on affordable, simple catering for events and gatherings.",
+      "da": "Kok Amok er en cateringservice med fokus på prisvenlig og enkel catering til events og arrangementer."
+    },
+    "technologies": ["WordPress", "Oxygen", "Woocommerce", ""],
+    "details": {
+      "en": "The site is developed using WordPress, with a clean layout and an emphasis on simplicity and accessibility for visitors interested in booking catering services.",
+      "da": "Siden er udviklet i WordPress med et enkelt layout og fokus på tilgængelighed for besøgende, der ønsker at bestille catering."
+    }
+  },
+  {
+    "slug": "kinetic-biofuel",
+    "name": "Kinetic Biofuel",
+    "url": "https://kineticbiofuel.com/",
+    "image": "assets/images/Screenshot_1.jpg",
+    "summary": {
+      "en": "Kinetic Biofuel develops 2nd-generation technology using straw as raw material, helping biogas producers more than double output.",
+      "da": "Kinetic Biofuel udvikler 2. generations teknologi, der bruger halm som råmateriale og hjælper biogasproducenter med at mere end fordoble deres output."
+    },
+    "technologies": ["WordPress"],
+    "details": {
+      "en": "Corporate site built with WordPress to present complex technical information in an accessible way.",
+      "da": "Erhvervsside bygget i WordPress, der præsenterer tekniske oplysninger på en tilgængelig måde."
+    }
+  },
+  {
+    "slug": "aalborg-city",
+    "name": "Aalborg City",
+    "url": "https://aalborgcity.dk/",
+    "image": "assets/images/Screenshot_2.jpg",
+    "summary": {
+      "en": "Aalborg City's website features events, user login, an eCommerce shop, bilingual support, and more.",
+      "da": "Aalborg Citys hjemmeside indeholder events, brugerlogin, webshop, tosproget funktionalitet og meget mere."
+    },
+    "technologies": ["WordPress"],
+    "details": {
+      "en": "Complex WordPress site with multilingual features and dynamic content for city-wide events and commerce.",
+      "da": "Avanceret WordPress-side med flersproget understøttelse og dynamisk indhold til byens events og handel."
+    }
+  },
+  {
+    "slug": "hotel-sankt-annae",
+    "name": "Hotel Sankt Annæ",
+    "url": "https://hotelsktannae.dk/",
+    "image": "assets/images/Screenshot_3.jpg",
+    "summary": {
+      "en": "Hotel Sankt Annæ is a 4-star hotel in central Copenhagen, with a clean, modern, and luxurious web design.",
+      "da": "Hotel Sankt Annæ er et 4-stjernet hotel i hjertet af København med et moderne og luksuriøst webdesign."
+    },
+    "technologies": ["WordPress"],
+    "details": {
+      "en": "Elegant WordPress site reflecting the hotel’s aesthetics, including booking functionality and multilingual content.",
+      "da": "Elegant WordPress-side, der afspejler hotellets æstetik, inklusiv bookingfunktion og flersproget indhold."
+    }
+  },
+  {
+    "slug": "broenderslev-staal",
+    "name": "Brønderslev Stål",
+    "url": "https://broenderslev-staal.dk/",
+    "image": "assets/images/broenderslev-staal.jpg",
+    "summary": {
+      "en": "Brønderslev Stål delivers advanced steel construction solutions for a wide range of industrial projects.",
+      "da": "Brønderslev Stål leverer avancerede stålkonstruktioner til en bred vifte af industrielle projekter."
+    },
+    "technologies": ["WordPress"],
+    "details": {
+      "en": "Industrial-style site featuring a strong, clean layout with focus on services and project showcasing.",
+      "da": "Industriel stil med et rent layout og fokus på virksomhedens ydelser og projekter."
+    }
+  },
+  {
+    "slug": "lampefeber",
+    "name": "Lampefeber",
+    "url": "https://da.lampefeber.com/",
+    "image": "assets/images/lampefeber.jpg",
+    "summary": {
+      "en": "Lampefeber sells designer lamps and lighting from European brands with a stylish and modern aesthetic.",
+      "da": "Lampefeber sælger designlamper og belysning fra europæiske brands i et stilrent, moderne design."
+    },
+    "technologies": ["Magento", "PHP"],
+    "details": {
+      "en": "Feature-rich eCommerce site built with Magento, including multilingual and regional pricing features.",
+      "da": "Funktionel webshop bygget i Magento med flersproget support og regionsspecifik prissætning."
+    }
+  },
+  {
+    "slug": "villahus",
+    "name": "Villahus",
+    "url": "https://www.villahus.dk/",
+    "image": "assets/images/villahus.jpg",
+    "summary": {
+      "en": "Villahus specializes in high-end door handles, knobs, and home accessories for Danish and international customers.",
+      "da": "Villahus specialiserer sig i eksklusive dørhåndtag, greb og boligtilbehør til danske og internationale kunder."
+    },
+    "technologies": ["Magento", "Custom Design"],
+    "details": {
+      "en": "Premium product site built on Magento with an elegant design and attention to product detail.",
+      "da": "Eksklusiv produktshop bygget i Magento med elegant design og fokus på produktdetaljer."
+    }
+  }
+]
