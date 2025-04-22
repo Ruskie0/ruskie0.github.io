@@ -33,14 +33,20 @@
 
     <section class="case-gallery">
       <h1 data-i18n="cases.title">Cases</h1>
+      <p data-i18n="cases.description">
+        Previous projects, clicking on any project will allow you to see details
+        and what parts of it i've worked on
+        <br />
+        This list is not exhaustive
+      </p>
 
       <div class="gallery-container">
         <!-- Kok Amok -->
         <div class="case-card">
           <img src="assets/images/kok-amok-logo.png" alt="Kok Amok website" />
           <div class="case-content">
-            <h3 data-i18n="cases.kokamok.title">Kok Amok</h3>
-            <p data-i18n="cases.kokamok.description">
+            <h3 data-i18n="kokamok.title">Kok Amok</h3>
+            <p data-i18n="kokamok.summary">
               Simple and stylish catering website with WordPress + Oxygen.
             </p>
             <a
@@ -59,8 +65,8 @@
             alt="Kinetic Biofuel website"
           />
           <div class="case-content">
-            <h3 data-i18n="cases.kinetic.title">Kinetic Biofuel</h3>
-            <p data-i18n="cases.kinetic.description">
+            <h3 data-i18n="kinetic.title">Kinetic Biofuel</h3>
+            <p data-i18n="kinetic.summary">
               Multilingual WordPress site showcasing green tech innovation.
             </p>
             <a
@@ -79,8 +85,8 @@
             alt="Aalborg City website"
           />
           <div class="case-content">
-            <h3 data-i18n="cases.aalborg.title">Aalborg City</h3>
-            <p data-i18n="cases.aalborg.description">
+            <h3 data-i18n="aalborg.title">Aalborg City</h3>
+            <p data-i18n="aalborg.summary">
               Dynamic bilingual site with events, login, and eCommerce.
             </p>
             <a
@@ -99,8 +105,8 @@
             alt="Hotel Sankt Annæ website"
           />
           <div class="case-content">
-            <h3 data-i18n="cases.hotel.title">Hotel Sankt Annæ</h3>
-            <p data-i18n="cases.hotel.description">
+            <h3 data-i18n="hotel.title">Hotel Sankt Annæ</h3>
+            <p data-i18n="hotel.summary">
               Elegant and responsive WordPress site for a luxury hotel in
               Copenhagen.
             </p>
@@ -120,8 +126,8 @@
             alt="Brønderslev Stål website"
           />
           <div class="case-content">
-            <h3 data-i18n="cases.staal.title">Brønderslev Stål</h3>
-            <p data-i18n="cases.staal.description">
+            <h3 data-i18n="staal.title">Brønderslev Stål</h3>
+            <p data-i18n="staal.summary">
               Modern company website focused on structural steel solutions.
             </p>
             <a
@@ -137,8 +143,8 @@
         <div class="case-card">
           <img src="assets/images/vendino-fav.png" alt="Vendino website" />
           <div class="case-content">
-            <h3 data-i18n="cases.vendino.title">Vendino</h3>
-            <p data-i18n="cases.vendino.description">
+            <h3 data-i18n="vendino.title">Vendino</h3>
+            <p data-i18n="vendino.summary">
               Stylish eCommerce platform built with WooCommerce and custom
               enhancements.
             </p>
@@ -158,8 +164,8 @@
             alt="Lampefeber website"
           />
           <div class="case-content">
-            <h3 data-i18n="cases.lampefeber.title">Lampefeber</h3>
-            <p data-i18n="cases.lampefeber.description">
+            <h3 data-i18n="lampefeber.title">Lampefeber</h3>
+            <p data-i18n="lampefeber.summary">
               Sophisticated lighting webshop with sleek design and multilingual
               setup.
             </p>
@@ -176,8 +182,8 @@
         <div class="case-card">
           <img src="assets/images/vilalhus-fav.jpg" alt="Villahus website" />
           <div class="case-content">
-            <h3 data-i18n="cases.villahus.title">Villahus</h3>
-            <p data-i18n="cases.villahus.description">
+            <h3 data-i18n="villahus.title">Villahus</h3>
+            <p data-i18n="villahus.summary">
               High-end webshop for door handles and interior details with a
               refined layout.
             </p>
@@ -202,6 +208,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/i18next@23.8.2/dist/umd/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
+
     <script>
       const english = document.getElementById("englishLang");
       const danish = document.getElementById("danishLang");

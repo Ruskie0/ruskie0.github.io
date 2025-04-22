@@ -1,6 +1,6 @@
 .case-gallery {
   background-color: #3f495c;
-  padding: 4rem 2rem;
+  padding: 10rem 2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -10,7 +10,12 @@
 .case-gallery h1 {
   font-size: 3rem;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+.case-gallery p {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 4rem;
 }
 .case-gallery .gallery-container {
   display: grid;

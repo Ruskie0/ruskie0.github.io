@@ -12,7 +12,7 @@ $purplish: #252047;
 
 .case-gallery {
   background-color: $DarkBlue;
-  padding: 4rem 2rem;
+  padding: 10rem 2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -22,7 +22,12 @@ $purplish: #252047;
   h1 {
     font-size: 3rem;
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 4rem;
   }
 
   .gallery-container {

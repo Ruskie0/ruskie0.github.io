@@ -1,0 +1,145 @@
+{
+  "trans1": "Hey, I'm Sebastian",
+  "trans2": "And I'm a Web Developer",
+  "trans3": "Want to see what i've built?",
+  "trans4": "Or",
+  "trans5": "Work with me?",
+  "trans6": "Who am I, anyway?",
+  "trans7": "The boring (but pretty important) stuff!",
+  "trans8": "First and foremost, I'm a nerd — a nerd who specializes in Front-End Web Development using JavaScript, HTML, CSS, SCSS, and various frameworks (Vue.js, React.js). I also have experience with Back-End development, including Server-Side PHP and SQL databases. I've worked with WordPress, Shopify, DanDomain aswell.",
+  "trans9": "The (slightly) more interesting stuff!",
+  "trans10": "I love gaming — anything from shooters to grand strategy to flight simulators. I've been into tech for as long as I can remember. I started using computers at around 8 years old, and have only grown more skilled and passionate over time. Outside of tech, I enjoy drawing (sometimes digitally) and reading.",
+  "trans11": "Technologies I've used primarily for Front-End",
+  "trans12": "Technologies I've used primarily for Back-End",
+  "trans13": "Previous Work",
+  "trans14": "Projects I've worked on, either solo or within a small team as a developer.",
+  "trans15": "Kok Amok is a catering service focused on affordable, simple catering for events and gatherings.<br><br>",
+  "trans16": "Kinetic Biofuel develops 2nd-generation technology using straw as raw material, helping biogas producers more than double output in both new and existing plants.<br><br>",
+  "trans17": "Aalborg City's website features events, user login, an eCommerce shop, bilingual support, and more.<br><br>",
+  "trans18": "Hotel Sankt Annæ is a 4-star hotel in central Copenhagen, with a clean, modern, and luxurious web design.<br><br>",
+  "trans19": "Got any questions? Want to work together?",
+  "trans20": "Feel free to send me a message — I'll get back to you as soon as possible.",
+  "trans21": "Feel free to send me a message using the form — I’ll get back to you as soon as possible. Whether you have a question, a project in mind, or just want to say hi, I’d love to hear from you.<br /><br />Prefer to reach out directly? You can email me at <a href=\"mailto:askie.dev@gmail.com\" style=\"color: #c36060;\">askie.dev@gmail.com</a> or call me at <a href=\"tel:+4522599595\" style=\"color: #c36060;\">+45 22 59 95 95</a>.",
+  "form": {
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "submitButton": "Send"
+  },
+  "cases": {
+    "title": "Selected Work",
+    "description": "Previous projects, clicking on any project will allow you to see details and what parts of it i've worked on <br/> This list is not exhaustive",
+    "readmore": "Read More",
+    "viewCase": "View Case"
+  },
+  "kokamok": {
+    "title": "Kok Amok",
+    "summary": "Kok Amok is a catering service focused on affordable, simple catering for events and gatherings.",
+    "toolsTitle": "Tools Used:",
+    "description": "Kok Amok is a clean, user-friendly WordPress website built for a catering company focused on modern simplicity and fast service. The website allows users to browse meal options, book catering directly, and contact the team with ease.",
+    "readmore": "Read more about Kok Amok on their website, <a href=\"https://kok-amok.dk\" style=\"color: #c36060;\"> here</a>"
+  },
+  "hotel": {
+    "title": "Hotel Sankt Annæ",
+    "summary": "Hotel Sankt Annæ is a 4-star hotel in central Copenhagen, with a clean, modern, and luxurious web design.",
+    "toolsTitle": "Tools Used:",
+    "description": "The website for Hotel Sankt Annæ was built to reflect the elegance and modern design of the hotel itself. Using WordPress with a custom theme, the site supports multilingual content, smooth booking experiences, and a sleek presentation of the hotel’s amenities and rooms.",
+    "readmore": "Read more about Hotel Sankt Annæ on their website, <a href=\"https://hotelsktannae.dk\" style=\"color: #c36060;\">here</a>"
+  },
+  "kinetic": {
+    "title": "Kinetic Biofuel",
+    "summary": "Kinetic Biofuel develops 2nd-generation technology using straw as raw material, helping biogas producers more than double output in both new and existing plants.",
+    "toolsTitle": "Tools Used:",
+    "description": "The Kinetic Biofuel website highlights their cutting-edge renewable technology. The layout supports multilingual content and a professional tone to reflect their innovative impact on the biogas industry.",
+    "readmore": "Read more about Kinetic Biofuel on their website, <a href=\"https://kineticbiofuel.com\" style=\"color: #c36060;\">here</a>."
+  },
+  "aalborg": {
+    "title": "Aalborg City",
+    "summary": "Aalborg City's website features events, user login, an eCommerce shop, bilingual support, and more.",
+    "toolsTitle": "Tools Used:",
+    "description": "The Aalborg City website is a dynamic bilingual platform showcasing local events, shopping opportunities, and community information. Built on WordPress with custom features, it supports both English and Danish, offering an inclusive and modern digital experience for residents and visitors alike.",
+    "readmore": "Read more about Aalborg City on their website <a href=\"https://aalborgcity.dk\" style=\"color: #c36060;\">here</a>."
+  },
+  "staal": {
+    "title": "Brønderslev Stål",
+    "summary": "A professional website for a leading Danish steel company with strong industrial branding.",
+    "toolsTitle": "Tools Used:",
+    "description": "The Brønderslev Stål website was designed to reflect strength and reliability. Built with WordPress and performance in mind, it highlights services, past projects, and contact options for B2B clients.",
+    "readmore": "Visit Brønderslev Stål <a href=\"https://broenderslev-staal.dk/\" style=\"color: #c36060;\">here</a>"
+  },
+  "vendino": {
+    "title": "Vendino",
+    "summary": "A sleek eCommerce platform specializing in customizable furniture solutions.",
+    "toolsTitle": "Tools Used:",
+    "description": "Vendino’s WooCommerce-powered site offers personalized shopping for furniture with a modern, Scandinavian design. The site is user-friendly and includes product configuration and checkout features.",
+    "readmore": "Discover Vendino <a href=\"https://vendino.com/da/\" style=\"color: #c36060;\">here</a>"
+  },
+  "lampefeber": {
+    "title": "Lampefeber",
+    "summary": "A multilingual eCommerce site selling designer lighting products across Europe.",
+    "toolsTitle": "Tools Used:",
+    "description": "Built on a custom CMS and multilingual framework, Lampefeber’s site offers a clean and premium design for customers seeking high-end lighting solutions.",
+    "readmore": "Explore Lampefeber <a href=\"https://da.lampefeber.com/\" style=\"color: #c36060;\">here</a>"
+  },
+  "villahus": {
+    "title": "Villahus",
+    "summary": "A clean and refined eCommerce site for quality door handles, fittings, and home accessories.",
+    "toolsTitle": "Tools Used:",
+    "description": "Villahus' platform showcases its extensive product catalog with filtering, detailed product pages, and a strong visual identity built for conversion and clarity.",
+    "readmore": "Visit Villahus <a href=\"https://www.villahus.dk/\" style=\"color: #c36060;\">here</a>"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Beneath are a list of the services i offer, if you are in need of anything further, or have any questions, you are free to <a href=\"#footer\" style=\"color: #c36060;\">contact me</a>",
+    "wordpress": {
+      "title": "WordPress Website",
+      "desc": "Custom WordPress sites with clean design, modern performance, and user-friendly CMS — perfect for businesses, portfolios, or blogs.",
+      "l1": "Custom theme development",
+      "l2": "Woocommerce store",
+      "l3": "Performance optimization",
+      "l4": "SEO Optimisation",
+      "l5": "Affordable",
+      "l6": "Easy to manage"
+    },
+    "shopify": {
+      "title": "Shopify Store",
+      "desc": "Custom-tailored Shopify solutions for sleek, high-converting eCommerce stores with scalable features.",
+      "l1": "Custom theme development",
+      "l2": "App integrations",
+      "l3": "Conversion-focused design",
+      "l4": "Speed optimization",
+      "l5": "Affordable",
+      "l6": "Scalable for growth"
+    },
+    "custom": {
+      "title": "Custom Website",
+      "desc": "Fully custom sites built from scratch — ideal for unique functionality, headless setups, or complete creative freedom.",
+      "l1": "Hand-coded HTML/CSS/JS",
+      "l2": "Fully responsive layouts",
+      "l3": "i18n for multilingual support",
+      "l4": "SEO-friendly structure",
+      "l5": "Zero platform lock-in",
+      "l6": "As unique as you want"
+    },
+    "hosting": {
+      "title": "Hosting",
+      "desc": "Reliable, secure, and optimized hosting solutions for websites of all sizes.",
+      "l1": "Fast and secure servers",
+      "l2": "Free SSL certificates",
+      "l3": "Daily backups",
+      "l4": "Email account setup",
+      "l5": "Affordable hosting plans",
+      "l6": "Server uptime monitoring"
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "desc": "Ongoing support to keep your website up-to-date, fast, and secure.",
+      "l1": "Wordpress maintenance",
+      "l2": "Shopify maintenance",
+      "l3": "Website health checks",
+      "l4": "Security checks",
+      "l5": "Performance tuning",
+      "l6": "Content edits"
+    }
+  }
+}
