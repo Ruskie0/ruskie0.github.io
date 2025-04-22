@@ -117,13 +117,14 @@
         method: "POST",
         body: formData,
       })
-        .then((response) => response.text())
+        .then((response) => response.json())
         .then((data) => {
-          if (data.includes("success")) {
+          if (data.status === "success") {
             document.getElementById("formSuccess").style.display = "block";
+            document.getElementById("formSuccess").innerText = data.message;
             form.reset();
           } else {
-            alert("Something went wrong. Please try again.");
+            alert(data.message || "Something went wrong.");
           }
         })
         .catch(() => alert("Error sending message."));

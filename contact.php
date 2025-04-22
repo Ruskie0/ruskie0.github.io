@@ -4,6 +4,8 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php'; // Loads Composer dependencies
 
+header('Content-Type: application/json');
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST["name"] ?? '');
     $email = htmlspecialchars($_POST["email"] ?? '');
@@ -11,7 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!$name || !$email || !$message) {
         http_response_code(400);
-        echo "Please fill out all fields.";
+        echo json_encode([
+            "status" => "error",
+            "message" => "Please fill out all fields."
+        ]);
         exit;
     }
 
@@ -20,29 +25,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; // Example: Gmail SMTP
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'askie.dev@gmail.com'; // Replace with your email
-        $mail->Password = 'bhic fhxc ywba zfes';
-        $mail->SMTPSecure = 'tls'; // Or 'ssl'
-        $mail->Port = 587; // Or 465 if using 'ssl'
+        $mail->Username = 'askie.dev@gmail.com'; // Your email
+        $mail->Password = 'bhic fhxc ywba zfes'; // App password
+        $mail->SMTPSecure = 'tls'; // Use 'ssl' if using port 465
+        $mail->Port = 587;
 
         // Recipients
         $mail->setFrom($email, $name);
-        $mail->addAddress('askie.dev@gmail.com'); // Your own email again
+        $mail->addAddress('askie.dev@gmail.com');
 
         // Content
         $mail->Subject = 'New message from portfolio';
         $mail->Body    = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
         $mail->send();
+
         http_response_code(200);
-        echo 'Message sent successfully';
+        echo json_encode([
+            "status" => "success",
+            "message" => "Message sent successfully!"
+        ]);
     } catch (Exception $e) {
         http_response_code(500);
-        echo 'Message could not be sent. Error: ', $mail->ErrorInfo;
+        echo json_encode([
+            "status" => "error",
+            "message" => "Message could not be sent. Mailer Error: " . $mail->ErrorInfo
+        ]);
     }
 } else {
     http_response_code(405);
-    echo "Method Not Allowed";
+    echo json_encode([
+        "status" => "error",
+        "message" => "Method Not Allowed"
+    ]);
 }
