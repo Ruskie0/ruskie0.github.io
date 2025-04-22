@@ -26,6 +26,10 @@
     "messageLabel": "Message",
     "submitButton": "Send"
   },
+  "cookie": {
+    "message": "This website uses cookies to enhance the user experience.",
+    "accept": "Accept"
+  },
   "cases": {
     "title": "Selected Work",
     "description": "Previous projects, clicking on any project will allow you to see details and what parts of it i've worked on <br/> This list is not exhaustive",

@@ -40,6 +40,41 @@ document.addEventListener("DOMContentLoaded", () => {
         loadIncludes(() => {
           updateContent();
 
+          // GOOGLE ANALYTICS AND COOKIES
+
+          const consentBox = document.getElementById("cookieConsent");
+          const acceptBtn = document.getElementById("acceptCookies");
+
+          function loadAnalytics() {
+            const script = document.createElement("script");
+            script.src =
+              "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"; // Replace with your GA ID
+            script.async = true;
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            window.gtag = gtag;
+            gtag("js", new Date());
+            gtag("config", "G-3BDKV9501R", { anonymize_ip: true }); // Replace with your GA ID
+          }
+
+          if (consentBox && acceptBtn) {
+            if (!localStorage.getItem("cookieConsentAccepted")) {
+              consentBox.style.display = "flex";
+            } else {
+              loadAnalytics();
+            }
+
+            acceptBtn.addEventListener("click", function () {
+              localStorage.setItem("cookieConsentAccepted", "true");
+              consentBox.style.display = "none";
+              loadAnalytics();
+            });
+          }
+
           // HAMBURGER MENU
           const hamburgerBtn = document.getElementById("hamburgerBtn");
           const dropDown = document.getElementById("dropDown");
@@ -50,6 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
               hamburgerBtn.classList.toggle("open");
             });
           }
+
+          // CONTACT FORM
           const form = document.getElementById("contactForm");
 
           if (form) {

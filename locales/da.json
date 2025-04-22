@@ -26,6 +26,11 @@
     "messageLabel": "Besked",
     "submitButton": "Send"
   },
+  "cookie": {
+    "message": "Dette websted bruger cookies for at forbedre brugeroplevelsen.",
+    "accept": "Accepter"
+  },
+
   "cases": {
     "title": "Udvalgte Projekter",
     "description": "Tidligere projekter som jeg har arbejdet på, du kan klikke på individuelle projekter for at læse mere om dem og min rolle deri <br/> Denne liste er ikke udtømmende",
