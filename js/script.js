@@ -50,6 +50,32 @@ document.addEventListener("DOMContentLoaded", () => {
               hamburgerBtn.classList.toggle("open");
             });
           }
+          const form = document.getElementById("contactForm");
+
+          if (form) {
+            form.addEventListener("submit", function (e) {
+              e.preventDefault();
+
+              const formData = new FormData(form);
+
+              fetch("contact.php", {
+                method: "POST",
+                body: formData,
+              })
+                .then((response) => response.json())
+                .then((data) => {
+                  if (data.status === "success") {
+                    const successMsg = document.getElementById("formSuccess");
+                    successMsg.style.display = "block";
+                    successMsg.innerText = data.message;
+                    form.reset();
+                  } else {
+                    alert(data.message || "Something went wrong.");
+                  }
+                })
+                .catch(() => alert("Error sending message."));
+            });
+          }
 
           // SPLIDE
           const splideEl1 = document.querySelector(".splide");
