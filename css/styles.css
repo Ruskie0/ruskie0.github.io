@@ -869,6 +869,19 @@ footer {
   cursor: pointer;
 }
 
+@media (max-width: 500px) {
+  .cookie-consent {
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-width: calc(100% - 20px);
+  }
+  .cookie-consent button {
+    width: 100%;
+    text-align: center;
+  }
+}
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);

@@ -114,4 +114,17 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+@media (max-width: 800px) {
+  .project-div {
+    width: 100%;
+  }
+  .project-image {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .display-flex {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=projects.css.map */
