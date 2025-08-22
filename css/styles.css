@@ -248,8 +248,8 @@ a {
   border: 3px solid #c36060;
 }
 .context p:nth-child(3) a:hover {
-  color: #d89898;
-  border: 3px solid #d89898;
+  color: rgb(215.9589041096, 151.5410958904, 151.5410958904);
+  border: 3px solid rgb(215.9589041096, 151.5410958904, 151.5410958904);
 }
 
 .context p:nth-child(5) a {
@@ -257,8 +257,8 @@ a {
   border: 3px solid #87afa3;
 }
 .context p:nth-child(5) a:hover {
-  color: #b5cec6;
-  border: 3px solid #b5cec6;
+  color: rgb(180.9, 205.6, 198.19);
+  border: 3px solid rgb(180.9, 205.6, 198.19);
 }
 
 .area {
@@ -667,6 +667,23 @@ a {
   transition: transform 0.3s ease;
 }
 
+.dividerThree {
+  position: relative;
+  background-color: #888277;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.dividerThreeImg {
+  display: block;
+  width: 101%;
+  margin-left: -0.5%;
+  height: auto;
+  overflow: hidden;
+}
+
 .site-footer {
   background-color: #252047;
   color: white;
@@ -676,20 +693,6 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
-}
-.site-footer .dividerThree {
-  position: absolute;
-  top: -75px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 1;
-}
-.site-footer .dividerThree img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 .site-footer .footer-content {
   border-top: 4px groove #c36060;
@@ -836,7 +839,7 @@ footer {
 }
 
 .button:hover {
-  background-color: #ae4242;
+  background-color: rgb(174.2465753425, 65.7534246575, 65.7534246575);
   transform: translateY(-2px);
 }
 
@@ -999,28 +1002,47 @@ footer {
   .aboutHeader img {
     width: 80%;
   }
-  .container80 {
-    width: 100%;
-  }
   .workItem {
+    box-sizing: border-box;
+    font-size: 25px;
     flex-direction: column;
   }
-  .workItem .leftImg {
-    width: 100%;
-    padding: 0%;
+  .workItem h3 {
+    font-size: 40px;
   }
-  .workItem .leftImg margin a {
-    padding: 0%;
+  .workItem p {
+    width: 95%;
   }
-  .workItem .leftImgContent {
-    width: 100%;
-  }
+  .workItem .leftImg,
   .workItem .rightImg {
+    transition: all 0.3s ease-in-out;
     width: 100%;
     padding: 0%;
+    border-radius: 0px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
   }
+  .workItem .leftImgContent,
   .workItem .rightImgContent {
+    padding-top: 1rem;
     width: 100%;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  .workItem .leftImg:hover,
+  .workItem .rightImg:hover {
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  .workItem:nth-child(odd) {
+    background-color: #555c47;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .workItem:nth-child(even) {
+    background-color: #3f495c;
+    border-radius: 16px;
+    overflow: hidden;
   }
   .context {
     top: 30vh;

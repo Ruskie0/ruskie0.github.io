@@ -665,6 +665,21 @@ a {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
+.dividerThree {
+  position: relative;
+  background-color: $MediumBrown;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+.dividerThreeImg {
+  display: block;
+  width: 101%;
+  margin-left: -0.5%;
+  height: auto;
+  overflow: hidden;
+}
 .site-footer {
   background-color: $purplish;
   color: white;
@@ -675,20 +690,6 @@ a {
   flex-direction: column;
   position: relative;
 
-  .dividerThree {
-    position: absolute;
-    top: -75px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 1;
-  }
-  .dividerThree img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
   .footer-content {
     border-top: 4px groove $LightRed;
     display: flex;
@@ -1016,29 +1017,51 @@ footer {
       width: 80%;
     }
   }
-  .container80 {
-    width: 100%;
-  }
+
   .workItem {
+    box-sizing: border-box;
+    font-size: 25px;
     flex-direction: column;
-    .leftImg {
-      width: 100%;
-      padding: 0%;
-      margin a {
-        padding: 0%;
-      }
+    h3 {
+      font-size: 40px;
     }
-    .leftImgContent {
-      width: 100%;
+    p {
+      width: 95%;
     }
+    .leftImg,
     .rightImg {
+      transition: all 0.3s ease-in-out;
       width: 100%;
       padding: 0%;
+      border-radius: 0px;
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
     }
+    .leftImgContent,
     .rightImgContent {
+      padding-top: 1rem;
       width: 100%;
+      border-bottom-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
+    .leftImg:hover,
+    .rightImg:hover {
+      border-radius: 16px;
+      transition: all 0.3s ease-in-out;
     }
   }
+  .workItem:nth-child(odd) {
+    background-color: $DarkGreen;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .workItem:nth-child(even) {
+    background-color: $DarkBlue;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
   .context {
     top: 30vh;
     h1 {
