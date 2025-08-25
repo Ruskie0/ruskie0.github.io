@@ -559,6 +559,7 @@ a {
 }
 .proWork p {
   width: 80%;
+  margin-bottom: 1.5rem;
 }
 
 .container80 {
@@ -594,6 +595,7 @@ a {
 }
 
 .leftImg {
+  box-sizing: border-box;
   width: 50%;
   height: 100%;
   padding-top: 5%;
@@ -626,6 +628,7 @@ a {
 }
 
 .rightImg {
+  box-sizing: border-box;
   width: 50%;
   height: 100%;
   padding-top: 5%;
@@ -909,6 +912,11 @@ footer {
   .container {
     flex-direction: column;
   }
+  .container80 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .columnSplit {
     width: 100%;
     padding-top: 2.5%;
@@ -918,20 +926,18 @@ footer {
   }
   .workItem {
     flex-direction: column;
-  }
-  .workItem .leftImg {
-    width: 100%;
-    padding-left: 5%;
-  }
-  .workItem .leftImgContent {
     width: 80%;
+    font-size: 35px;
   }
+  .workItem .leftImg,
   .workItem .rightImg {
     width: 100%;
+    padding-left: 5%;
     padding-right: 5%;
   }
+  .workItem .leftImgContent,
   .workItem .rightImgContent {
-    width: 80%;
+    width: 100%;
   }
   .workItem.rightWorkItem {
     flex-direction: column-reverse;
@@ -976,6 +982,9 @@ footer {
   }
 }
 @media (max-width: 1000px) {
+  .container80 {
+    width: 100%;
+  }
   .footerDiv .footerSocials ul {
     height: 100%;
   }
@@ -996,11 +1005,6 @@ footer {
   .topsocials {
     min-width: 200px;
     right: 30px;
-  }
-}
-@media (max-width: 800px) {
-  .aboutHeader img {
-    width: 80%;
   }
   .workItem {
     box-sizing: border-box;
@@ -1035,14 +1039,19 @@ footer {
     transition: all 0.3s ease-in-out;
   }
   .workItem:nth-child(odd) {
-    background-color: #555c47;
+    background-color: #3f495c;
     border-radius: 16px;
     overflow: hidden;
   }
   .workItem:nth-child(even) {
-    background-color: #3f495c;
+    background-color: #555c47;
     border-radius: 16px;
     overflow: hidden;
+  }
+}
+@media (max-width: 800px) {
+  .aboutHeader img {
+    width: 80%;
   }
   .context {
     top: 30vh;
@@ -1116,6 +1125,9 @@ footer {
   .topsocials img {
     width: 2.5rem;
     height: 2.5rem;
+  }
+  .proWork {
+    font-size: 30px;
   }
 }
 @media (max-width: 700px) {
